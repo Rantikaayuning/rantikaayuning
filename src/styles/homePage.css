@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+
 .homepage {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 200px;
+    /* margin-top: 180px; */
     /* padding: 0 15%; */
     color: whitesmoke;
 } 
 
 .title h6{
-    font-size: 40px;
+    font-size: 70px;
     color: grey;
+    font-family: 'Sofia';
 }
 
 .navbar-list {
@@ -30,13 +33,13 @@
 }
 
 .profile-contact a {
-    font-size: 3rem;
+    font-size: 2rem;
     color: whitesmoke;
     margin: 0 2%;
 }
 
 .profile-contact .bi:hover{
-    font-size: 3rem;
+    font-size: 2rem;
     color: grey;
     cursor: pointer;
 }
@@ -45,4 +48,12 @@
     color: grey;
 }
 
+.custom-carousel {
+    width: 80%;
+    height: 300px;
+}
 
+.carousel-container {
+    display: flex;
+    justify-content: center;
+}

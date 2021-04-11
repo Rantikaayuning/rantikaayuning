@@ -1,11 +1,16 @@
 import React from 'react';
 import { Card, Button, CardTitle, Row, Col, CardImg } from 'reactstrap';
-import Resume from '../assets/cvimg.jpg';
+import Resume from '../assets/cvicon.jpg';
 
-const ResumePage = (props) => {
+const ResumePage = () => {
   return (
     <div className='resume-container'>
-      <h4>Here is my CV</h4>
+      <p>CV</p>
+      <h3>
+        <i class="bi bi-cloud-arrow-down"></i>{' '}
+        <i class="bi bi-cloud-arrow-down"></i>{' '}
+        <i class="bi bi-cloud-arrow-down"></i>
+      </h3>
       <div className='card-container'>
       <Row>
         <Col xl="12">

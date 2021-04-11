@@ -7,9 +7,9 @@ import {
   Nav,
   NavLink,
 } from 'reactstrap';
-import Logo from '../assets/signaturefix.png';
+import Logo from '../assets/profilelogo.png';
 
-const HomeNavbar = (props) => {
+const HomeNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -22,10 +22,10 @@ const HomeNavbar = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar></Nav>
           <Nav navbar>
-          <NavLink href="/">Home</NavLink>
-          <NavLink href="/projects">Projects</NavLink>
-          <NavLink href="/resume">Resume</NavLink>
-          <NavLink href="/about">About</NavLink>
+            <NavLink href="/">Home</NavLink>
+            <NavLink href="/projects">Projects</NavLink>
+            <NavLink href="/resume">Resume</NavLink>
+            <NavLink href="/about">About</NavLink>
           </Nav>
         </Collapse>
       </Navbar>
