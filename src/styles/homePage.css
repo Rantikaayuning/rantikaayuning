@@ -1,0 +1,48 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    /* padding: 0 15%; */
+    color: whitesmoke;
+} 
+
+.title h6{
+    font-size: 40px;
+    color: grey;
+}
+
+.navbar-list {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-list img {
+    height: 20px;
+    object-fit:cover;
+}
+
+.homepage .profile-contact{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.profile-contact a {
+    font-size: 3rem;
+    color: whitesmoke;
+    margin: 0 2%;
+}
+
+.profile-contact .bi:hover{
+    font-size: 3rem;
+    color: grey;
+    cursor: pointer;
+}
+
+.homepage h5 {
+    color: grey;
+}
+
+

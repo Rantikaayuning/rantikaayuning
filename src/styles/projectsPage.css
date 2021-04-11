@@ -1,0 +1,30 @@
+.project-page {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+
+}
+
+.app-container {
+    display: flex;
+    margin: 5%;
+}
+
+.app-description {
+    width: 70%;
+    margin-right: 5%;
+}
+
+.tech-stack {
+    width: 30%;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 5%;
+}
+
+.video-container img{
+    width: 100%;
+}

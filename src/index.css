@@ -1,0 +1,15 @@
+@import './styles/profilePage.css';
+@import './styles/homePage.css';
+@import './styles/projectsPage.css';
+@import './styles/resumePage.css';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url(./assets/whitebg.jpg);
+    background-size: cover;
+}
