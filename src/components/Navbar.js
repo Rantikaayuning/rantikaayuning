@@ -7,7 +7,6 @@ import {
   Nav,
   NavLink,
 } from 'reactstrap';
-import Logo from '../assets/profilelogo.png';
 
 const HomeNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +17,6 @@ const HomeNavbar = () => {
     <div>
       <Navbar light expand="md" className='navbar-list' >
         <NavbarBrand href="/">
-          {/* <img src={Logo} alt=''/> */}
           <h5>RA</h5>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
