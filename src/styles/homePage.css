@@ -14,17 +14,21 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .profile-contact a {
-    font-size: 30px;
+    /* font-size: 30px; */
     color: whitesmoke;
     margin: 0 2%;
 }
 
-.profile-contact .bi:hover{
+.profile-contact .bi {
     font-size: 30px;
+}
+
+.profile-contact .bi:hover{
+    /* font-size: 30px; */
     color: grey;
     cursor: pointer;
 }
@@ -51,4 +55,10 @@
 .navbar-list img {
     height: 20px;
     object-fit:cover;
+}
+
+.navbar-list h5 {
+    font-family: Sofia;
+    height: 20px;
+    color: cadetblue;
 }

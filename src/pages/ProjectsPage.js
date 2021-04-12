@@ -1,43 +1,50 @@
 import React from "react";
 import ReactPlayer from 'react-player/youtube';
 import MovieApp from '../assets/movie-app.jpg';
+import { projects } from '../assets/DummyData/DummyData';
 
 const ProjectsPage = () => {
   return (
     <div className='project-page'>
+      {projects.map((item, id) => (
+      <>
       <div className='app-container'>
         <div className='app-description'>
-        <h5>Lektur</h5>
+        <h4>{item.name} <i class="bi bi-cast"></i></h4>
         <p>Description :</p>
-        <p>Learning Management System that held online, where students can access materials, tracking their learning progress, and do assessments then get certificate. Through this app, students will be able to track their learning progress, obtain a certificate of course and assessment completion provided by teachers.</p>
+        <p>{item.desc}</p>
+        <p>
+          <i class="bi bi-link-45deg"></i>{' '}
+          <a href={item.link} target='_blank' rel='noreferrer'>
+          {item.link}
+          </a>
+        </p>
         </div>
         <div className='tech-stack'>
-          <p>Tech Stack</p>
+          <h4>Tech Stack</h4>
+        {item.tech.map((item, id) => (
+          <span>
+            <img src={item} alt='' key={id}/>{' '}
+          </span>
+        ))}
         </div>
       </div>
       <div>
       <div className='video-container'>
-        <ReactPlayer 
-          url='https://youtu.be/xEEOIWPKnSo' 
+        {item.video === null ? (
+          <img src={MovieApp} alt='movie-app' />
+        ) : (
+          <ReactPlayer 
+          url={item.video} 
           onEnablePIP={true} 
           volume={0.182} 
           controls
         />
+        )}
       </div>
       </div>
-      <div className='app-container'>
-        <div className='app-description'>
-          <h5>BBM Warehouse</h5>
-          <p>Description :</p>
-          <p>Movie app where users can search movie then see detail, rating, and review about that movie.</p>
-        </div>
-        <div className='tech-stack'>
-          <p>Tech Stack</p>
-        </div>
-      </div>
-      <div className='video-container'>
-        <img src={MovieApp} alt='movie-app' />
-      </div>
+      </>
+      ))}
     </div>
   );
 };

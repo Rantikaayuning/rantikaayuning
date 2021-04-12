@@ -18,7 +18,7 @@ const HomePage = () => {
       </div> */}
       <div className='profile-contact'>
         <a href='https://github.com/Rantikaayuning' target='blank'><i class="bi bi-github"></i></a>
-        <a href='https://www.linkedin.com/in/rantika-ayuning-dewi-b96563151/' target='blank'><i class="bi bi-linkedin"></i></a>
+        <a href='https://www.linkedin.com/in/rantika-ayuning-b96563151/' target='blank'><i class="bi bi-linkedin"></i></a>
         <a href='https://www.instagram.com/rantikaayuning' target='blank'><i class="bi bi-instagram"></i></a>
       </div>
         <h6>Email : rantika97@gmail.com</h6>

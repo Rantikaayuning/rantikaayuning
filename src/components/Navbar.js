@@ -17,7 +17,10 @@ const HomeNavbar = () => {
   return (
     <div>
       <Navbar light expand="md" className='navbar-list' >
-        <NavbarBrand href="/"><img src={Logo} alt=''/></NavbarBrand>
+        <NavbarBrand href="/">
+          {/* <img src={Logo} alt=''/> */}
+          <h5>RA</h5>
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar></Nav>

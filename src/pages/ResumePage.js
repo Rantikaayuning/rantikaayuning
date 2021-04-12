@@ -19,7 +19,7 @@ const ResumePage = () => {
   
   return (
     <div className='resume-container'>
-      <p>CV</p>
+      <p className='title'>CV</p>
       <h3>
         <i class="bi bi-cloud-arrow-down"></i>{' '}
         <i class="bi bi-cloud-arrow-down"></i>{' '}
@@ -29,7 +29,7 @@ const ResumePage = () => {
       <Row>
         <Col xl="12">
           <Card body>
-            <CardTitle tag="h5">CV</CardTitle>
+            <CardTitle tag="h5" className='title'>CV</CardTitle>
             <CardImg top width="100%" height="50%" src={Resume} alt="Card image cap" /><br/>
             {isView ? (
               <Button outline color='dark' disabled>View</Button>

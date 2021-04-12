@@ -1,23 +1,32 @@
 .about-container {
     display: flex;
     justify-content: center;
-    padding: 10% 15%;
-    color: grey;
+    padding: 10% 10%;
 }
 
-.skills-box Button{
+.skills-box Button {
     border-radius: 20px;
 }
 
-.profile-image{
-    width: 20%;
-}
-
-.profile-image img{
-    width: 200px;
-    border-radius: 50%;
-}
-
-.first-box {
+.profile-image {
     margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+.profile-image img {
+    width: 200px;
+    border-radius: 5%;
+}
+
+.right-box {
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
