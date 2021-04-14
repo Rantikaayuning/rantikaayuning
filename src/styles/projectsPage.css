@@ -32,6 +32,11 @@
     width: 15%;
 }
 
+h4 {
+    font-weight: bolder;
+    text-decoration: underline dotted grey;
+}
+
 @media screen and (max-width: 768px) {
     .app-container {
         display: flex;
