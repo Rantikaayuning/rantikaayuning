@@ -6,7 +6,6 @@
     justify-content: center;
     text-align: center;
     margin-top: 5%;
-    /* padding: 0 15%; */
     color: whitesmoke;
 } 
 
@@ -18,7 +17,6 @@
 }
 
 .profile-contact a {
-    /* font-size: 30px; */
     color: whitesmoke;
     margin: 0 2%;
 }
@@ -28,7 +26,6 @@
 }
 
 .profile-contact .bi:hover{
-    /* font-size: 30px; */
     color: grey;
     cursor: pointer;
 }
@@ -39,7 +36,6 @@
 
 .custom-carousel {
     width: 80%;
-    /* height: 300px; */
 }
 
 .carousel-container {
