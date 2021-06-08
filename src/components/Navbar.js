@@ -25,7 +25,6 @@ const HomeNavbar = () => {
           <Nav navbar>
             <NavLink href="/">Home</NavLink>
             <NavLink href="/projects">Projects</NavLink>
-            <NavLink href="/resume">Resume</NavLink>
             <NavLink href="/about">About</NavLink>
           </Nav>
         </Collapse>
