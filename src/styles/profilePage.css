@@ -15,9 +15,10 @@
     height: 50%;
 }
 
-.profile-image img {
-    width: 200px;
-    border-radius: 5%;
+.profile-image h5 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
 }
 
 .right-box {

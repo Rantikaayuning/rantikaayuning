@@ -1,13 +1,14 @@
 import React from "react";
 import { Button } from 'reactstrap';
-import ProfileImg from '../assets/profileimg.jpg';
+// import ProfileImg from '../assets/profileimg.jpg';
 import { education, languages, profile, skills } from '../assets/DummyData/DummyData';
 
 const ProfilePage = () => {
   return (
     <div className='about-container'>
       <div className='profile-image'>
-        <img src={ProfileImg} alt=''/>
+        {/* <img src={ProfileImg} alt=''/> */}
+        <h5>ABOUT ME</h5>
       </div><br/>
       <div className='right-box'>
       {profile.map((item, id) => (

@@ -24,8 +24,10 @@ const HomeNavbar = () => {
           <Nav className="mr-auto" navbar></Nav>
           <Nav navbar>
             <NavLink href="/">Home</NavLink>
-            <NavLink href="/projects">Projects</NavLink>
             <NavLink href="/about">About</NavLink>
+            <NavLink href="/skills">Skills</NavLink>
+            <NavLink href="/projects">Portofolio</NavLink>
+            <NavLink href="/contact">Contact</NavLink>
           </Nav>
         </Collapse>
       </Navbar>

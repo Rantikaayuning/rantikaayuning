@@ -1,61 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Sofia');
 
+.homepage, .profile-contact{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 .homepage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 5%;
-    color: whitesmoke;
+  color: lightgray;
+  padding: 5%;
+  justify-content: space-evenly;
 } 
 
-.homepage .profile-contact{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 3%;
+.homepage .name img {
+  width: 100%;
+}
+
+.homepage .picture img {
+  width: 60%;
+  border-radius: 20% 20% 50% 50%;
+}
+
+.homepage .picture {
+  width: 30%;
+}
+
+.homepage .name {
+  width: 60%;
+}
+
+.profile-contact {
+  flex-direction: column;
 }
 
 .profile-contact a {
-    color: whitesmoke;
-    margin: 0 2%;
+  margin: 0 2%;
+  color: lightgray;
 }
 
 .profile-contact .bi {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .profile-contact .bi:hover{
-    color: grey;
-    cursor: pointer;
-}
-
-.homepage h5 {
-    color: grey;
-}
-
-.custom-carousel {
-    width: 80%;
-}
-
-.carousel-container {
-    display: flex;
-    justify-content: center;
+  cursor: pointer;
 }
 
 /* Navbar */
 .navbar-list {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-list img {
-    height: 20px;
-    object-fit:cover;
+  height: 20px;
+  object-fit:cover;
 }
 
 .navbar-list h5 {
-    font-family: Sofia;
-    height: 20px;
-    color: cadetblue;
+  font-family: Sofia;
+  height: 20px;
+  color: cadetblue;
 }
 
