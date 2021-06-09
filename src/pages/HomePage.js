@@ -1,5 +1,5 @@
 import React from "react";
-// import ItemName from '../assets/myname.png';
+import NameImg from '../assets/name.png';
 import Profile from '../assets/profile.jpg';
 
 const HomePage = () => {
@@ -21,12 +21,12 @@ const HomePage = () => {
             </div>
 
             <div class="home__img">
-              <img src={Profile} alt="..."/>
+              <img src={NameImg} alt="..."/>
             </div>
 
             <div class="home__data">
               <h1 class="home__title">Hi, I'm Rantika</h1>
-              <h3 class="home__subtitle">Frontend Developer</h3>
+              <h3 class="home__subtitle">Junior Frontend Developer</h3>
               <p class="home__description">
                 Result-driven Front End Developer passionate about developing user-friendly website design.
               </p>
@@ -42,6 +42,35 @@ const HomePage = () => {
               <span class="home__scroll-name">Scroll Down</span>
               <i class="bi bi-arrow-down-circle home__scroll-arrow"></i>
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My Introduction</span>
+        <div class="about__container container grid">
+          <img src={Profile} alt="" class="about__img"/>
+          <div class="about__data">
+            <p class="about__description">
+              Front End Developer passionate about developing user-friendly website design. Excellent problem-solving skills and ability to perform well in a team.
+            </p>
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">2+ </span>
+                <span class="about__info-name">Projects<br/>done</span>
+              </div>
+              <div>
+                <span class="about__info-title">Certified </span>
+                <span class="about__info-name">Junior Frontend<br/>Developer</span>
+              </div>
+            </div>
+
+            <div class="about__buttons">
+              <a download="" href="./assets/resume-rantika.pdf" class="button button--flex">
+                Download Resume<i class="bi bi-download button__icon"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
