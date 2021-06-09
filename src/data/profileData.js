@@ -1,13 +1,13 @@
-import IconHtml from '../html.png';
-import IconCss from '../css.png';
-import IconGit from '../Git.png';
-import IconGitlab from '../gitlab.png';
-import IconHeroku from '../heroku.png';
-import IconJS from '../javascript.jpg';
-import IconReact from '../react.png';
-import IconReactstrap from '../reactstrap.png';
-import IconRedux from '../redux.png';
-import IconStyled from '../styled.png';
+// import IconHtml from '../html.png';
+// import IconCss from '../css.png';
+// import IconGit from '../Git.png';
+// import IconGitlab from '../gitlab.png';
+// import IconHeroku from '../heroku.png';
+// import IconJS from '../javascript.jpg';
+// import IconReact from '../react.png';
+// import IconReactstrap from '../reactstrap.png';
+// import IconRedux from '../redux.png';
+// import IconStyled from '../styled.png';
 
 export const profile = [
     {
@@ -43,13 +43,13 @@ export const projects = [
         desc : 'Learning Management System that held online, where students can access materials, tracking their learning progress, and do assessments then get certificate. Through this app, students will be able to track their learning progress, obtain a certificate of course and assessment completion provided by teachers.',
         link : 'https://lektur-app-glints.herokuapp.com',
         video : 'https://youtu.be/xEEOIWPKnSo',
-        tech : [IconHtml, IconCss, IconJS, IconReact, IconRedux, IconGit, IconGitlab, IconHeroku, IconReactstrap]
+        // tech : [IconHtml, IconCss, IconJS, IconReact, IconRedux, IconGit, IconGitlab, IconHeroku, IconReactstrap]
     },
     {
         name : 'BBM Warehouse',
         desc : 'Movie app where users can search movie then see detail, rating, and review about that movie.',
         link : 'https://bbm-warehouse-glints.herokuapp.com',
         video : null,
-        tech : [IconHtml, IconCss, IconJS, IconReact, IconRedux, IconGit, IconGitlab, IconHeroku, IconReactstrap, IconStyled]
+        // tech : [IconHtml, IconCss, IconJS, IconReact, IconRedux, IconGit, IconGitlab, IconHeroku, IconReactstrap, IconStyled]
     }
 ]
