@@ -81,55 +81,55 @@ const HomePage = () => {
         <div class="skills__container container grid">
           <div class="skills__content">
             <div class="skills__header">
-              <i class="bi bi-braces"></i>
+              <i class="bi bi-braces skills__icon"></i>
               <div>
                 <h1 class="skills__title">Frontend Developer</h1>
                 <span class="skills__subtitle">Certified as Junior Frontend Developer</span>
               </div>
-
+              <i class="bi bi-caret-down skills__icon"></i>
             </div>
 
             <div class="skills__list grid">
-              <div class="skilss__data">
-                <div class="skills__title">
+              <div class="skills__data">
+                <div class="skills__titles">
                   <h3 class="skills__name">HTML</h3>
                   <span class="skills__number">90%</span>
                 </div>
                 <div class="skills__bar">
-                  <span class="skills__precentage skills__html"></span>
+                  <span class="skills__percentage skills__html"></span>
                 </div>
               </div>
             </div>
             <div class="skills__list grid">
-              <div class="skilss__data">
-                <div class="skills__title">
+              <div class="skills__data">
+                <div class="skills__titles">
                   <h3 class="skills__name">CSS</h3>
                   <span class="skills__number">80%</span>
                 </div>
                 <div class="skills__bar">
-                  <span class="skills__precentage skills__css"></span>
+                  <span class="skills__percentage skills__css"></span>
                 </div>
               </div>
             </div>
             <div class="skills__list grid">
-              <div class="skilss__data">
-                <div class="skills__title">
+              <div class="skills__data">
+                <div class="skills__titles">
                   <h3 class="skills__name">JavaScript</h3>
                   <span class="skills__number">70%</span>
                 </div>
                 <div class="skills__bar">
-                  <span class="skills__precentage skills__js"></span>
+                  <span class="skills__percentage skills__js"></span>
                 </div>
               </div>
             </div>
             <div class="skills__list grid">
-              <div class="skilss__data">
-                <div class="skills__title">
+              <div class="skills__data">
+                <div class="skills__titles">
                   <h3 class="skills__name">React</h3>
                   <span class="skills__number">80%</span>
                 </div>
                 <div class="skills__bar">
-                  <span class="skills__precentage skills__react"></span>
+                  <span class="skills__percentage skills__react"></span>
                 </div>
               </div>
             </div>
@@ -138,7 +138,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      
+
     </main>
   );
 };
