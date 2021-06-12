@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import NameImg from '../assets/name.png';
 import Profile from '../assets/profile.jpg';
 
 const HomePage = () => {
+  const [skills, setSkills] = useState(true);
+
+  const toggleSkills = () => {
+    setSkills(!skills);
+  }
   return (
     <main class="main">
       <section class="home section" id="home">
@@ -79,14 +84,14 @@ const HomePage = () => {
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">My technical level</span>
         <div class="skills__container container grid">
-          <div class="skills__content">
+          <div class={skills ? "skills__content skills__close" : "skills__content skills__open"}>
             <div class="skills__header">
-              <i class="bi bi-braces skills__icon"></i>
+              <i class="bi bi-box skills__icon"></i>
               <div>
                 <h1 class="skills__title">Frontend Developer</h1>
                 <span class="skills__subtitle">Certified as Junior Frontend Developer</span>
               </div>
-              <i class="bi bi-caret-down skills__icon"></i>
+              <i class="bi bi-caret-down skills__arrow" onClick={toggleSkills}></i>
             </div>
 
             <div class="skills__list grid">
