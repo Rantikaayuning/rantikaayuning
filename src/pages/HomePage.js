@@ -4,9 +4,19 @@ import Profile from '../assets/profile.jpg';
 
 const HomePage = () => {
   const [skills, setSkills] = useState(true);
+  const [eduTabs, setEduTabs] = useState(true);
+  const [workTabs, setWorkTabs] = useState(true);
 
   const toggleSkills = () => {
     setSkills(!skills);
+  }
+
+  const toggleEduTabs = () => {
+    setEduTabs(!eduTabs)
+  }
+
+  const toggleWorkTabs = () => {
+    setWorkTabs(!workTabs)
   }
 
   return (
@@ -146,53 +156,96 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section class="qualification section">
-        <h2 class="section title">Qualification</h2>
-        <span class="section_subtitle">My Journey</span>
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My Journey</span>
         <div class="qualification__container container">
           <div class="qualification__tabs">
-            <div class="qualification__button button--flex">
+            <div class="qualification__button button--flex qualification__active" data-target="#education" onClick={toggleEduTabs}>
               <i class="uil uil-graduation-cap qualification__icon"></i>Education
             </div>
 
-            <div class="qualification__button button--flex">
+            <div class="qualification__button button--flex" data-target="#work" onClick={toggleWorkTabs}>
               <i class="uil uil-suitcase qualification__icon"></i>Work
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="qualification section">
-    <h2 class="section title">Qualification</h2>
-    <span class="section_subtitle">My Journey</span>
-    <div class="qualification__container container">
-      <div class="qualification__tabs">
-        <div class="qualification__button button--flex">
-          <i class="uil uil-graduation-cap qualification__icon"></i>Education
-        </div>
+          <div class="qualification__sections">
 
-        <div class="qualification__button button--flex">
-          <i class="uil uil-suitcase qualification__icon"></i>Work
-        </div>
-        
-        <div class="qualification__sections">
-          <div class="qualification__content">
-              <h3 class="qualification__data">
+            <div class={eduTabs? "qualification__content" : "qualification__content qualification__active"} data-content id="education">
+              <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">Frontend Developer</h3>
-                  <span class="qualification__subtitle"></span>
+                  <h3 class="qualification__title">Frontend Development</h3>
+                  <span class="qualification__subtitle">Glints Academy x Binar Academy</span>
                   <div class="qualification__calendar">
-                    <i class="uil uil-calender"></i>
+                    <i class="uil uil-schedule"></i>
                     2020 - 2021
                   </div>
                 </div>
 
-              </h3>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Hotel Management</h3>
+                  <span class="qualification__subtitle">International Hotel Management School</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-schedule"></i>
+                    2016 - 2019
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class={workTabs ? "qualification__content" : "qualification__content qualification__active"} data-content id="work">
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Frontend Developer Intern</h3>
+                  <span class="qualification__subtitle">Automate All</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-schedule"></i>
+                    2021 - Present
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Sales and Marketing Support</h3>
+                  <span class="qualification__subtitle">ibis Styles Bandung Braga</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-schedule"></i>
+                    2020 - 2020
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
     </main>
   );
