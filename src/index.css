@@ -1,6 +1,7 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
 
+
 /*==================== VARIABLES CSS ====================*/
 :root {
   --header-height: 3rem;
@@ -129,7 +130,7 @@ img {
 }
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 768px;
+  /* max-width: 768px; */
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -150,7 +151,7 @@ img {
 
 /*==================== NAV ====================*/
 nav {
-  max-width: 968;
+  /* max-width: 968; */
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -272,10 +273,6 @@ nav {
   row-gap: 1rem;
 }
 
-.home__social-icon:hover {
-  color: var(--first-color-alt);
-}
-
 .home__data {
   grid-column: 1/3;
 }
@@ -295,9 +292,9 @@ nav {
   margin-bottom: var(--mb-2);
 }
 
-.home__scroll {
+/* .home__scroll {
   display: none;
-}
+} */
 
 .home__scroll-button {
   color: var(--first-color);
@@ -321,6 +318,15 @@ nav {
 
 .home__scroll-arrow, .button__icon {
   font-size: 1.25rem;
+}
+
+.home__icon {
+  font-size: 2rem;
+  color: var(--first-color-alt);
+}
+
+.home__icon:hover {
+  color: var(--first-color-lighter);
 }
 
 /*==================== BUTTONS ====================*/
