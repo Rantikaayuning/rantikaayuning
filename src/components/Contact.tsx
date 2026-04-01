@@ -1,28 +1,24 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  HiOutlineEnvelope,
-  HiOutlinePhone,
-  HiOutlineMapPin,
-} from "react-icons/hi";
+import { HiEnvelope, HiPhone, HiMapPin } from "react-icons/hi2";
 import ContactForm from "./ContactForm";
 
 const contactMethods = [
   {
-    icon: HiOutlineEnvelope,
+    icon: HiEnvelope,
     label: "Email",
     value: "rantika@example.com",
     href: "mailto:rantika@example.com",
   },
   {
-    icon: HiOutlinePhone,
+    icon: HiPhone,
     label: "Phone",
     value: "+62 XXX-XXXX-XXXX",
     href: "tel:+62",
   },
   {
-    icon: HiOutlineMapPin,
+    icon: HiMapPin,
     label: "Location",
     value: "Indonesia",
   },
@@ -43,8 +39,8 @@ export default function Contact() {
         >
           <h2 className="section-title">Get In Touch</h2>
           <p className="section-subtitle">
-            Have a project in mind? Let's connect and create something amazing
-            together.
+            Have a project in mind? Let&apos;s connect and create something
+            amazing together.
           </p>
         </motion.div>
 

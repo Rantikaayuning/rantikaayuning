@@ -1,12 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  HiOutlineGlobeAlt,
-  HiGithub,
-  HiLinkedin,
-  HiInstagram,
-} from "react-icons/hi";
+import { HiGlobeAlt } from "react-icons/hi";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 interface SocialLinkProps {
   platform: string;
@@ -15,10 +11,10 @@ interface SocialLinkProps {
 }
 
 const iconMap: Record<string, React.ReactNode> = {
-  github: <HiGithub className="w-6 h-6" />,
-  linkedin: <HiLinkedin className="w-6 h-6" />,
-  instagram: <HiInstagram className="w-6 h-6" />,
-  global: <HiOutlineGlobeAlt className="w-6 h-6" />,
+  github: <FaGithub className="w-6 h-6" />,
+  linkedin: <FaLinkedin className="w-6 h-6" />,
+  instagram: <FaInstagram className="w-6 h-6" />,
+  global: <HiGlobeAlt className="w-6 h-6" />,
 };
 
 export default function SocialLink({ platform, url, icon }: SocialLinkProps) {

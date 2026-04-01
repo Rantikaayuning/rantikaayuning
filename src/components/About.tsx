@@ -55,8 +55,8 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              I'm a passionate Frontend Developer with a strong foundation in
-              web development technologies. I graduated from Glints Academy x
+              I&apos;m a passionate Frontend Developer with a strong foundation
+              in web development technologies. I graduated from Glints Academy x
               Binar Academy bootcamp, where I honed my skills in building
               modern, responsive web applications.
             </p>
@@ -64,8 +64,8 @@ export default function About() {
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               With expertise in React, Next.js, and modern CSS frameworks, I
               love transforming design concepts into interactive, user-friendly
-              applications. I'm committed to continuous learning and staying
-              updated with the latest web development trends.
+              applications. I&apos;m committed to continuous learning and
+              staying updated with the latest web development trends.
             </p>
 
             <div className="grid grid-cols-2 gap-6 py-6">

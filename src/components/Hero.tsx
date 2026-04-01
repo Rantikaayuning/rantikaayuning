@@ -59,7 +59,7 @@ export default function Hero() {
             className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6"
           >
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Hi, I'm Rantika
+              Hi, I&apos;m Rantika
             </span>
           </motion.h1>
 
