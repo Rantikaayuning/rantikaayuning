@@ -8,19 +8,19 @@ const contactMethods = [
   {
     icon: HiEnvelope,
     label: "Email",
-    value: "rantika@example.com",
-    href: "mailto:rantika@example.com",
+    value: "rayuningdewi@gmail.com",
+    href: "mailto:rayuningdewi@gmail.com",
   },
   {
     icon: HiPhone,
     label: "Phone",
-    value: "+62 XXX-XXXX-XXXX",
-    href: "tel:+62",
+    value: "+62 851-2138-2804",
+    href: "tel:+6285121382804",
   },
   {
     icon: HiMapPin,
     label: "Location",
-    value: "Indonesia",
+    value: "Jakarta, Indonesia",
   },
 ];
 

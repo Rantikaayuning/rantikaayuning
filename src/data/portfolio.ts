@@ -40,6 +40,20 @@ export interface Project {
   featured: boolean;
 }
 
+export interface Experience {
+  id: string;
+  company: string;
+  position: string;
+  type: string; // Full-time, Contract, Internship
+  startDate: string;
+  endDate: string;
+  duration: string;
+  location: string;
+  workMode: string; // Hybrid, Remote, On-site
+  description: string;
+  achievements?: string[];
+}
+
 export interface Social {
   platform: string;
   url: string;
@@ -49,13 +63,13 @@ export interface Social {
 export const profile: Profile = {
   name: "Rantika Ayuning",
   title: "Frontend Developer",
-  subtitle: "Crafting Beautiful Digital Experiences",
+  subtitle: "Building Innovation Through Code",
   description:
-    "Result-driven Frontend Developer passionate about building user-friendly, responsive web applications. Specialized in React, Next.js, and modern web technologies.",
+    "Experienced Frontend Developer with 2+ years of professional experience in building responsive, scalable web applications. Specialized in React.js, Next.js, and modern web technologies. Proven track record of delivering high-quality solutions in collaborative team environments.",
   email: "rantika@example.com",
   phone: "+62 XXX-XXXX-XXXX",
-  location: "Indonesia",
-  bio: "Recently graduated from Glints Academy x Binar Academy coding bootcamp as Junior Frontend Developer with excellent problem-solving skills and ability to perform well in a team. Currently seeking opportunities to leverage my front-end development skills in a professional environment.",
+  location: "South Jakarta, Indonesia",
+  bio: "Frontend Developer with 2+ years of hands-on experience in designing and developing user-centric web applications. Proficient in React.js, Next.js, and Tailwind CSS. Passionate about writing clean, maintainable code and creating seamless user experiences. Strong problem-solving abilities and excellent collaboration skills proven across diverse team environments.",
 };
 
 export const education: Education[] = [
@@ -99,9 +113,83 @@ export const skills: Skill[] = [
   },
 ];
 
+export const experience: Experience[] = [
+  {
+    id: "1",
+    company: "Praktis",
+    position: "Frontend Developer",
+    type: "Full-time",
+    startDate: "Jul 2022",
+    endDate: "Feb 2025",
+    duration: "2 yrs 8 mos",
+    location: "South Jakarta, Jakarta, Indonesia",
+    workMode: "Hybrid",
+    description:
+      "Developed and maintained responsive web applications using React.js and Next.js. Collaborated with cross-functional teams including UI/UX designers and backend developers to deliver high-quality user interfaces.",
+    achievements: [
+      "Built multiple responsive components resulting in 20% improved user engagement",
+      "Optimized application performance reducing load time by 30% through lazy loading and code splitting",
+      "Mentored and conducted code reviews to maintain code quality standards",
+    ],
+  },
+  {
+    id: "2",
+    company: "MG Indotech",
+    position: "Junior Frontend Developer",
+    type: "Contract",
+    startDate: "Jun 2021",
+    endDate: "Jun 2022",
+    duration: "1 yr 1 mo",
+    location: "West Jakarta, Jakarta, Indonesia",
+    workMode: "On-site",
+    description:
+      "Contributed to the development of web applications using React.js and Redux. Implemented responsive designs and integrated RESTful APIs for seamless data communication.",
+    achievements: [
+      "Developed 15+ React components with complete test coverage",
+      "Successfully integrated third-party APIs improving system efficiency",
+      "Implemented responsive design patterns compatible with all devices",
+      "Collaborated with designers to translate mockups into functional components",
+    ],
+  },
+  {
+    id: "3",
+    company: "ibis Styles Bandung Braga",
+    position: "Sales Administrator",
+    type: "Contract",
+    startDate: "Jan 2020",
+    endDate: "Mar 2020",
+    duration: "3 mos",
+    location: "Bandung, West Java, Indonesia",
+    workMode: "On-site",
+    description:
+      "Managed administrative tasks and supported sales team operations. Gained valuable experience in customer service, data management, and business processes.",
+    achievements: [
+      "Maintained accurate customer databases and records",
+      "Provided excellent customer service resulting in positive feedback",
+    ],
+  },
+];
+
 export const projects: Project[] = [
   {
     id: "1",
+    name: "tata-arto",
+    description: "Family Finance Management App",
+    longDescription:
+      "A mobile app that helps families manage finances together. Track expenses, analyze spending patterns, and manage family budgets in real-time. Features include multi-user family management, expense & income tracking, real-time synchronization, monthly analytics, and search & filtering capabilities.",
+    technologies: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Supabase",
+      "Zustand",
+      "TailwindCSS",
+      "Netlify",
+    ],
+    featured: true,
+  },
+  {
+    id: "2",
     name: "Lektur",
     description: "Learning Management System",
     longDescription:
@@ -112,7 +200,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "2",
+    id: "3",
     name: "BBM Warehouse",
     description: "Movie Discovery Application",
     longDescription:

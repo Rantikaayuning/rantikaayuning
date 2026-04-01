@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { socials } from "@/data/portfolio";
-import SocialLink from "./SocialLink";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -35,18 +34,23 @@ export default function Footer() {
           >
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {["Home", "About", "Skills", "Projects", "Contact"].map(
-                (link) => (
-                  <li key={link}>
-                    <a
-                      href={`#${link.toLowerCase()}`}
-                      className="text-gray-400 hover:text-primary transition-colors"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ),
-              )}
+              {[
+                "Home",
+                "About",
+                "Skills",
+                "Experience",
+                "Projects",
+                "Contact",
+              ].map((link) => (
+                <li key={link}>
+                  <a
+                    href={`#${link.toLowerCase()}`}
+                    className="text-gray-400 hover:text-primary transition-colors"
+                  >
+                    {link}
+                  </a>
+                </li>
+              ))}
             </ul>
           </motion.div>
 
